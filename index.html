@@ -15,10 +15,10 @@ html{
 scroll-behavior:smooth;
 }
 
-.hero{
-background:linear-gradient(-45deg,#6366f1,#8b5cf6,#06b6d4,#6366f1);
-background-size:400% 400%;
-animation:gradient 12s ease infinite;
+.hero-bg{
+background:linear-gradient(270deg,#6366f1,#8b5cf6,#6366f1);
+background-size:600% 600%;
+animation:gradient 10s ease infinite;
 }
 
 @keyframes gradient{
@@ -29,7 +29,7 @@ animation:gradient 12s ease infinite;
 
 .fade{
 opacity:0;
-transform:translateY(40px);
+transform:translateY(30px);
 transition:all .8s;
 }
 
@@ -39,46 +39,20 @@ transform:translateY(0);
 }
 
 .card:hover{
-transform:translateY(-10px) scale(1.03);
+transform:translateY(-10px) scale(1.02);
 transition:.3s;
 }
 
 .whatsapp{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:25px;
+right:25px;
 background:#25D366;
 color:white;
-padding:16px;
+padding:15px;
 border-radius:50%;
 font-size:24px;
-box-shadow:0 10px 25px rgba(0,0,0,.3);
-}
-
-.chatbox{
-position:fixed;
-bottom:100px;
-right:20px;
-width:260px;
-background:white;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,.2);
-padding:15px;
-display:none;
-}
-
-.progress{
-height:8px;
-background:#e5e7eb;
-border-radius:999px;
-overflow:hidden;
-}
-
-.progress-bar{
-height:8px;
-background:#6366f1;
-width:0%;
-transition:1.5s;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
 }
 
 </style>
@@ -89,17 +63,17 @@ transition:1.5s;
 
 <!-- NAVBAR -->
 
-<nav class="fixed w-full bg-white shadow z-50">
+<nav class="fixed top-0 w-full bg-white shadow z-50">
 
-<div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+<div class="max-w-6xl mx-auto flex justify-between p-4">
 
-<h1 class="font-bold text-lg">CJ Luzano</h1>
+<h1 class="font-bold">CJ Luzano</h1>
 
-<div class="space-x-6 text-sm">
+<div class="space-x-6">
 
 <a href="#about">About</a>
 <a href="#services">Services</a>
-<a href="#skills">Skills</a>
+<a href="#portfolio">Portfolio</a>
 <a href="#contact">Contact</a>
 
 </div>
@@ -110,7 +84,7 @@ transition:1.5s;
 
 <!-- HERO -->
 
-<section class="hero text-white text-center pt-40 pb-32">
+<section class="hero-bg text-white text-center pt-40 pb-32">
 
 <div class="max-w-4xl mx-auto fade">
 
@@ -119,7 +93,7 @@ Your Reliable Virtual Assistant
 </h1>
 
 <p class="text-xl mb-8">
-Helping entrepreneurs save time, stay organized, and grow faster.
+Helping entrepreneurs save time and scale their business.
 </p>
 
 <a href="#contact" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:scale-105 transition">
@@ -139,7 +113,7 @@ Hire Me
 <h2 class="text-3xl font-bold mb-6">About Me</h2>
 
 <p>
-Hi, I'm <b>Cj Luzano</b>, a Virtual Assistant from the Philippines helping businesses stay organized and productive.
+Hi, I'm <b>Cj Luzano</b>, a Virtual Assistant from the Philippines helping businesses stay organized, productive, and stress-free.
 </p>
 
 </div>
@@ -152,25 +126,38 @@ Hi, I'm <b>Cj Luzano</b>, a Virtual Assistant from the Philippines helping busin
 
 <div class="max-w-6xl mx-auto px-6">
 
-<h2 class="text-3xl font-bold text-center mb-12 fade">
-Services
-</h2>
+<h2 class="text-3xl font-bold text-center mb-12 fade">Services</h2>
 
 <div class="grid md:grid-cols-3 gap-8">
 
 <div class="card bg-gray-100 p-6 rounded-xl fade">
-<h3 class="font-semibold">Administrative Support</h3>
-<p>File management, documents, daily tasks.</p>
+<h3 class="font-semibold mb-2">Administrative Support</h3>
+<p>Organizing documents, tasks, and workflows.</p>
 </div>
 
 <div class="card bg-gray-100 p-6 rounded-xl fade">
-<h3 class="font-semibold">Social Media Assistance</h3>
-<p>Scheduling posts and content organization.</p>
+<h3 class="font-semibold mb-2">Social Media Assistance</h3>
+<p>Scheduling posts and engagement tracking.</p>
 </div>
 
 <div class="card bg-gray-100 p-6 rounded-xl fade">
-<h3 class="font-semibold">Data Entry</h3>
-<p>Clean spreadsheets and accurate data.</p>
+<h3 class="font-semibold mb-2">Data Entry</h3>
+<p>Clean and accurate spreadsheets.</p>
+</div>
+
+<div class="card bg-gray-100 p-6 rounded-xl fade">
+<h3 class="font-semibold mb-2">Customer Support</h3>
+<p>Professional email and chat responses.</p>
+</div>
+
+<div class="card bg-gray-100 p-6 rounded-xl fade">
+<h3 class="font-semibold mb-2">Email Management</h3>
+<p>Inbox organization and replies.</p>
+</div>
+
+<div class="card bg-gray-100 p-6 rounded-xl fade">
+<h3 class="font-semibold mb-2">Calendar Management</h3>
+<p>Meeting scheduling and reminders.</p>
 </div>
 
 </div>
@@ -179,34 +166,34 @@ Services
 
 </section>
 
-<!-- SKILLS -->
+<!-- PORTFOLIO -->
 
-<section id="skills" class="py-20">
+<section id="portfolio" class="py-20">
 
-<div class="max-w-4xl mx-auto px-6 fade">
+<div class="max-w-6xl mx-auto px-6">
 
-<h2 class="text-3xl font-bold mb-10">Tools & Skills</h2>
+<h2 class="text-3xl font-bold text-center mb-12 fade">Portfolio</h2>
 
-<div class="space-y-6">
+<div class="grid md:grid-cols-2 gap-8">
 
-<div>
-<p>Google Workspace</p>
-<div class="progress"><div class="progress-bar" data-width="90%"></div></div>
+<div class="bg-white shadow p-6 rounded fade">
+<h3 class="font-semibold">Social Media Graphics</h3>
+<p>Designed Canva templates for brands.</p>
 </div>
 
-<div>
-<p>Microsoft Office</p>
-<div class="progress"><div class="progress-bar" data-width="85%"></div></div>
+<div class="bg-white shadow p-6 rounded fade">
+<h3 class="font-semibold">Data Management</h3>
+<p>Created Google Sheets for inventory tracking.</p>
 </div>
 
-<div>
-<p>Notion / Trello</p>
-<div class="progress"><div class="progress-bar" data-width="80%"></div></div>
+<div class="bg-white shadow p-6 rounded fade">
+<h3 class="font-semibold">Inbox Organization</h3>
+<p>Structured Gmail filters and folders.</p>
 </div>
 
-<div>
-<p>Canva</p>
-<div class="progress"><div class="progress-bar" data-width="75%"></div></div>
+<div class="bg-white shadow p-6 rounded fade">
+<h3 class="font-semibold">Calendar Systems</h3>
+<p>Organized client schedules and meetings.</p>
 </div>
 
 </div>
@@ -219,21 +206,17 @@ Services
 
 <section class="bg-gray-100 py-20">
 
-<div class="max-w-4xl mx-auto text-center px-6 fade">
+<div class="max-w-4xl mx-auto text-center px-6">
 
-<h2 class="text-3xl font-bold mb-10">
-Client Testimonials
-</h2>
+<h2 class="text-3xl font-bold mb-10 fade">Client Testimonials</h2>
 
-<div id="testimonial" class="text-lg">
+<div id="testimonial" class="text-lg fade">
 
 "Cj is incredibly organized and saved me hours every week."
 
 </div>
 
-<p class="mt-4 font-semibold">
-— Client Review
-</p>
+<p class="mt-4 font-semibold">— Client Review</p>
 
 </div>
 
@@ -250,7 +233,7 @@ Let's Work Together
 </h2>
 
 <p class="mb-6">
-Ready to reclaim your time?
+Email me to start working together.
 </p>
 
 <a href="mailto:va620366@gmail.com"
@@ -266,30 +249,15 @@ Send Email
 © 2026 Cj Luzano
 </footer>
 
-<!-- WhatsApp -->
+<!-- WhatsApp Button -->
 
-<a onclick="toggleChat()" class="whatsapp">
+<a href="https://wa.me/" class="whatsapp">
 💬
 </a>
 
-<!-- Chat box -->
-
-<div id="chatbox" class="chatbox">
-
-<p class="text-sm mb-2">
-Hi 👋 Need help with your business?
-</p>
-
-<a href="mailto:va620366@gmail.com"
-class="text-indigo-600 text-sm underline">
-Send me an email
-</a>
-
-</div>
-
 <script>
 
-const observer=new IntersectionObserver(entries=>{
+const observer = new IntersectionObserver(entries=>{
 entries.forEach(entry=>{
 if(entry.isIntersecting){
 entry.target.classList.add("show")
@@ -301,16 +269,10 @@ document.querySelectorAll(".fade").forEach(el=>{
 observer.observe(el)
 })
 
-document.querySelectorAll(".progress-bar").forEach(bar=>{
-setTimeout(()=>{
-bar.style.width=bar.dataset.width
-},800)
-})
-
 const testimonials=[
 "Cj is incredibly organized and saved me hours every week.",
-"Professional, reliable, and proactive assistant.",
-"Helped our team stay organized and productive."
+"Professional, reliable, and proactive VA.",
+"One of the best assistants I've worked with."
 ]
 
 let i=0
@@ -319,11 +281,6 @@ setInterval(()=>{
 i=(i+1)%testimonials.length
 document.getElementById("testimonial").innerText=testimonials[i]
 },4000)
-
-function toggleChat(){
-const box=document.getElementById("chatbox")
-box.style.display=box.style.display==="block"?"none":"block"
-}
 
 </script>
 
